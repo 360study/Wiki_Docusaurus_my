@@ -1,6 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
+/***------刘进钱，编辑于2023.02.28 主要模板来自https://github.com/linyuxuanlin/Wiki_Docusaurus
+ * 但是原作者用的是algolia的在线搜索功能，由于其注册比较麻烦，所以我采用了本地搜索@cmfcmf/docusaurus-search-local
+ */
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const math = require('remark-math');
@@ -22,7 +24,7 @@ const config = {
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/embed.js',
   //  'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
   //],
-  plugins: [
+  plugins: [//本地搜索*********
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
@@ -46,7 +48,7 @@ const config = {
           indexPages: false,
 
           // language of your documentation, see next section
-          language: "zh",
+          language: ["en", "zh"],
 
           // setting this to "none" will prevent the default CSS to be included. The default CSS
           // comes from autocomplete-theme-classic, which you can read more about here:
@@ -93,9 +95,12 @@ const config = {
      },
     ],
   ],
+
+  //plugins: ["@lyrasearch/plugin-docusaurus"],
+
   themes: [
     // ... Your other themes.
-    /*
+    
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
@@ -110,7 +115,7 @@ const config = {
         indexBlog: true,
         indexPages: true,
       },
-    ],*/
+    ], 
   ],
 
 
@@ -119,18 +124,11 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        googleAnalytics: {
-          trackingID: 'UA-152900803-1',
-          anonymizeIP: false,
-        },
-        gtag: {
-          trackingID: 'G-N2MCBBXJ0F', //Fork 我的仓库，请把这个改成你自己的
-          anonymizeIP: false,
-        },
+
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
+          //editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
           sidebarCollapsible: true, //默认折叠
           routeBasePath: "/",
           showLastUpdateTime: false,
@@ -138,22 +136,6 @@ const config = {
           breadcrumbs: false,
           remarkPlugins: [math],
           rehypePlugins: [katex],
-        },
-
-        blog: {
-          showReadingTime: false,
-          editUrl: 'https://github.com/linyuxuanlin/Wiki_Docusaurus/edit/main/',
-          //blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
-          postsPerPage: 8,
-          path: 'blog',
-          blogSidebarTitle: 'Recent',
-          feedOptions: {
-            type: 'all',
-            title: 'Power\'s Blog',
-            description: 'Power\'s Wiki 的博客 RSS',
-            copyright: `Copyright © ${new Date().getFullYear()} Power Lin.`,
-          },
         },
 
         sitemap: {
@@ -181,42 +163,42 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
 
-      algolia: {
+      // algolia: {
 
-        apiKey: '3c9c3aadf0226445bcc782076a31f5b9',//?02bd2340879bdb682f2a9fe509fec240
-        indexName: 'wiki-power', //
+      //   apiKey: '3c9c3aadf0226445bcc782076a31f5b9',//?02bd2340879bdb682f2a9fe509fec240
+      //   indexName: 'wiki-power', //
 
-        // The application ID provided by Algolia
-        appId: 'NKV74XMM46', //BH4D9OD16A 是默认的，文档见 https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#appid，用自己的 ID IRO903CONI 反而搜不出内容 
+      //   // The application ID provided by Algolia
+      //   appId: 'NKV74XMM46', //BH4D9OD16A 是默认的，文档见 https://autocomplete-experimental.netlify.app/docs/docsearchmodal/#appid，用自己的 ID IRO903CONI 反而搜不出内容 
 
-        // Public API key: it is safe to commit it
-        // apiKey: 'defe7fd8690822eed8e3c94801bab286',
+      //   // Public API key: it is safe to commit it
+      //   // apiKey: 'defe7fd8690822eed8e3c94801bab286',
 
-        // indexName: 'wiki-power',
+      //   // indexName: 'wiki-power',
 
-        // Optional: see doc section below
-        contextualSearch: true,
+      //   // Optional: see doc section below
+      //   contextualSearch: true,
 
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
-        //externalUrlRegex: 'external\\.com|domain\\.com',
+      //   // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+      //   //externalUrlRegex: 'external\\.com|domain\\.com',
 
-        // Optional: Algolia search parameters
-        searchParameters: {},
+      //   // Optional: Algolia search parameters
+      //   searchParameters: {},
 
-        // Optional: path for search page that enabled by default (`false` to disable it)
-        searchPagePath: 'search',
+      //   // Optional: path for search page that enabled by default (`false` to disable it)
+      //   searchPagePath: 'search',
 
-        //... other Algolia params
-      },
+      //   //... other Algolia params
+      // },
 
       //sidebarCollapsible: true, //默认折叠
 
       metadata: [{
         name: 'keywords',
-        content: 'ATE, hardware, STM32, Arduino, NAS, software, blog'
+        content: 'QMS,EMS,质量管理,质量管理体系,CCAA,审核员'
       }],
 
-      image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
+      //image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
 
       docs: {
         sidebar: {
@@ -226,13 +208,13 @@ const config = {
       },
 
       navbar: {
-        title: 'Power\'s Wiki',
+        title: 'QMS学习网站',
         hideOnScroll: true,
         /*
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
-        },*/
+        },
 
 
 
@@ -266,28 +248,27 @@ const config = {
           },
 
 
-        ],
+        ],*/
       },
 
 
       footer: {
         style: 'light',
 
-
         links: [
 
-          {
-            href: "https://nav.wiki-power.com/",
-            label: "友链 & 导航站",
-          },
-          {
-            href: "http://digest.wiki-power.com/",
-            label: "书摘",
-          },
-          {
-            label: '资源仓库',
-            href: 'https://github.com/linyuxuanlin/File-host',
-          },
+          // {
+          //   href: "https://nav.wiki-power.com/",
+          //   label: "友链 & 导航站",
+          // },
+          // {
+          //   href: "http://digest.wiki-power.com/",
+          //   label: "书摘",
+          // },
+          // {
+          //   label: '资源仓库',
+          //   href: 'https://github.com/linyuxuanlin/File-host',
+          // },
 
           /*
           {
