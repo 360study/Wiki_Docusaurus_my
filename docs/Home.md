@@ -4,6 +4,14 @@ title: Power's Wiki
 sidebar_label: Home
 slug: /
 ---
+<!--  自定义组件放在docs目录下。文件名为.js-->
+
+import Highlight from './Highlight';
+
+import TOCInline from '@theme/TOCInline';
+
+
+<Highlight color="#25c2a0">Docusaurus 绿</Highlight>
 
 <!--  一个不会讲故事的攻城狮，算不上一个很酷的产品汪~-->
 
@@ -23,3 +31,7 @@ Hi there~
 [![badge](https://img.shields.io/badge/Contact%20me-here-34ABE0?&style=flat-square)](ContactMe)
 
 <h6>Power Lin |  <a href="https://beian.miit.gov.cn"> 粤 ICP 备 20014898 号 </a> | Built with Docusaurus</h6>
+
+
+
+<TOCInline toc={toc} />;
