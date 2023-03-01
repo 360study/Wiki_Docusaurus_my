@@ -22,7 +22,27 @@ const config = {
     markdown: {
         mermaid: true
     },
-
+    i18n: {
+        defaultLocale: 'zh',
+        locales: ['en', 'zh'],
+        path: 'i18n',
+        localeConfigs: {
+          en: {
+            label: 'English',
+            direction: 'ltr',
+            htmlLang: 'en-US',
+            calendar: 'gregory',
+            path: 'en',
+          },
+          zh: {
+            label: 'Chinese',
+            direction: 'ltr',
+            htmlLang: 'zh-CN',
+            calendar: 'gregory',
+            path: 'zh',
+          },
+        },
+      },
     // scripts: [
     // 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/embed.js',
     // 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
@@ -240,6 +260,22 @@ const config = {
             navbar: {
                 title: 'QMS学习网站',
                 hideOnScroll: true,
+                items:[
+                    // {
+                    //     type: 'localeDropdown',
+                    //     position: 'right',
+                    //     dropdownItemsAfter: [
+                    //       {
+                    //         type: 'html',
+                    //         value: '<hr style="margin: 0.3rem 0;">',
+                    //       },
+                    //       {
+                    //         href: 'https://github.com/facebook/docusaurus/issues/3526',
+                    //         label: 'Help Us Translate',
+                    //       },
+                    //     ],
+                    //   },
+                ],
                 /*
         logo: {
           alt: 'My Site Logo',
