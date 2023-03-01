@@ -28,7 +28,10 @@ const config = {
     // 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/autoFitIframe.js'
     // ],
     plugins: [
-        // 本地搜索*********
+        
+      
+      // 本地搜索*********
+
         [
             require.resolve("@cmfcmf/docusaurus-search-local"), {
                 // whether to index docs pages
