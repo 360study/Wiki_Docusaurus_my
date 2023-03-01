@@ -1,6 +1,5 @@
 ---
-id: Tools
-title: Tools
+sidebar_position: 1
 ---
 
 —— 利器分享
