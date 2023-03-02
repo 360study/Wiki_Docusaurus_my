@@ -1880,7 +1880,7 @@
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-darwin-arm64/-/jieba-darwin-arm64-1.6.2.tgz#184cb496d407c7cac45659c5b7c1494698c6abdc"
   integrity sha512-CvYmRSYebd4gpBYzmLivB17M4faNAe3o3BQ1E3MvjmlEu/J43XD59rOTdSkbe5ZykstC4i/xhaXKWRG2gcaOig==
 
-"@node-rs/jieba-darwin-x64@1.6.2", "@node-rs/jieba-darwin-x64@^1.6.1":
+"@node-rs/jieba-darwin-x64@1.6.2":
   version "1.6.2"
   resolved "https://registry.npmjs.org/@node-rs/jieba-darwin-x64/-/jieba-darwin-x64-1.6.2.tgz"
   integrity sha512-YcI9nNnYrNMhh2onnWnEkNdByYj0JbqPD4yF4GCmF4SsFRcEUEEnJrFE42FZoWzhDhUrE3hSU0uBjL+8iggr9w==
@@ -1930,7 +1930,7 @@
   resolved "https://registry.yarnpkg.com/@node-rs/jieba-win32-x64-msvc/-/jieba-win32-x64-msvc-1.6.2.tgz#3ee5d52014821c6dc41da8e4d9dc00a9e08dd070"
   integrity sha512-d2W0IoxJ176jODE8wF6nNxfddYEaCtQ1xckJjIve/xHwUiBElnt81A41wZnfeyGx3pUaWMo4132s9EYJlN0Umg==
 
-"@node-rs/jieba@^1.6.0":
+"@node-rs/jieba@^1.6.0", "@node-rs/jieba@^1.6.1":
   version "1.6.2"
   resolved "https://registry.npmjs.org/@node-rs/jieba/-/jieba-1.6.2.tgz"
   integrity sha512-1GA3RqfGgjemgMoh2wajdiApYEGZ7mjzsqIqEjHv7rHuIpSJSEgV+Jt81popd0DK0HLPNShVV3T3fSmTgv20Zw==
