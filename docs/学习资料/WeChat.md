@@ -36,7 +36,7 @@ Docusaurus provides some APIs on the clients that can be helpful to you when bui
 
 ### `<ErrorBoundary />` {#errorboundary}
 
-This component creates a [React error boundary](https://reactjs.org/docs/error-boundaries.html).
+This component creates a [React error boundaryhttps://reactjs.org/docs/error-boundaries.html).
 
 Use it to wrap components that might throw, and display a fallback when that happens instead of crashing the whole app.
 
@@ -91,7 +91,7 @@ The `fallback` prop is a callback, and **not a React functional component**. You
 
 ### `<Head/>` {#head}
 
-This reusable React component will manage all of your changes to the document head. It takes plain HTML tags and outputs plain HTML tags and is beginner-friendly. It is a wrapper around [React Helmet](https://github.com/nfl/react-helmet).
+This reusable React component will manage all of your changes to the document head. It takes plain HTML tags and outputs plain HTML tags and is beginner-friendly. It is a wrapper around [React Helmethttps://github.com/nfl/react-helmet).
 
 Usage Example:
 
@@ -185,7 +185,7 @@ Prefer this component to vanilla `<a>` tags because Docusaurus does a lot of opt
 
 ### `<Redirect/>` {#redirect}
 
-Rendering a `<Redirect>` will navigate to a new location. The new location will override the current location in the history stack like server-side redirects (HTTP 3xx) do. You can refer to [React Router's Redirect documentation](https://reacttraining.com/react-router/web/api/Redirect) for more info on available props.
+Rendering a `<Redirect>` will navigate to a new location. The new location will override the current location in the history stack like server-side redirects (HTTP 3xx) do. You can refer to [React Router's Redirect documentationhttps://reacttraining.com/react-router/web/api/Redirect) for more info on available props.
 
 Example usage:
 
@@ -202,7 +202,7 @@ const Home = () => {
 
 :::note
 
-`@docusaurus/router` implements [React Router](https://reacttraining.com/react-router/web/guides/quick-start) and supports its features.
+`@docusaurus/router` implements [React Routerhttps://reacttraining.com/react-router/web/guides/quick-start) and supports its features.
 
 :::
 
@@ -297,9 +297,9 @@ export default function VisitMyWebsiteMessage() {
 
 ### `<Translate/>` {#translate}
 
-When [localizing your site](./i18n/i18n-introduction.mdx), the `<Translate/>` component will allow providing **translation support to React components**, such as your homepage. The `<Translate>` component supports [interpolation](#interpolate).
+When [localizing your site./i18n/i18n-introduction.mdx), the `<Translate/>` component will allow providing **translation support to React components**, such as your homepage. The `<Translate>` component supports [interpolation#interpolate).
 
-The translation strings will statically extracted from your code with the [`docusaurus write-translations`](./cli.mdx#docusaurus-write-translations-sitedir) CLI and a `code.json` translation file will be created in `website/i18n/[locale]`.
+The translation strings will statically extracted from your code with the [`docusaurus write-translations`./cli.mdx#docusaurus-write-translations-sitedir) CLI and a `code.json` translation file will be created in `website/i18n/[locale]`.
 
 :::note
 
@@ -311,7 +311,7 @@ Apart from the `values` prop used for interpolation, it is **not possible to use
 
 #### Props {#translate-props}
 
-- `children`: untranslated string in the default site locale (can contain [interpolation placeholders](#interpolate))
+- `children`: untranslated string in the default site locale (can contain [interpolation placeholders#interpolate))
 - `id`: optional value to be used as the key in JSON translation files
 - `description`: optional text to help the translator
 - `values`: optional object containing interpolation placeholder values
@@ -362,7 +362,7 @@ You can even omit the children prop and specify a translation string in your `co
 
 :::info
 
-The `<Translate>` component supports interpolation. You can also implement [string pluralization](https://github.com/facebook/docusaurus/pull/i18n/i18n-tutorial.mdx#pluralization) through some custom code and the [`translate` imperative API](#translate-imperative).
+The `<Translate>` component supports interpolation. You can also implement [string pluralizationhttps://github.com/facebook/docusaurus/pull/i18n/i18n-tutorial.mdx#pluralization) through some custom code and the [`translate` imperative API#translate-imperative).
 
 :::
 
@@ -370,7 +370,7 @@ The `<Translate>` component supports interpolation. You can also implement [stri
 
 ### `useDocusaurusContext` {#useDocusaurusContext}
 
-React hook to access Docusaurus Context. The context contains the `siteConfig` object from [docusaurus.config.js](api/docusaurus.config.js.mdx) and some additional site metadata.
+React hook to access Docusaurus Context. The context contains the `siteConfig` object from [docusaurus.config.jsapi/docusaurus.config.js.mdx) and some additional site metadata.
 
 ```ts
 type PluginVersionInformation =
@@ -441,7 +441,7 @@ Returns `true` when the React app has successfully hydrated in the browser.
 
 Use this hook instead of `typeof windows !== 'undefined'` in React rendering logic.
 
-The first client-side render output (in the browser) **must be exactly the same** as the server-side render output (Node.js). Not following this rule can lead to unexpected hydration behaviors, as described in [The Perils of Rehydration](https://www.joshwcomeau.com/react/the-perils-of-rehydration/).
+The first client-side render output (in the browser) **must be exactly the same** as the server-side render output (Node.js). Not following this rule can lead to unexpected hydration behaviors, as described in [The Perils of Rehydrationhttps://www.joshwcomeau.com/react/the-perils-of-rehydration/).
 
 :::
 
@@ -469,7 +469,7 @@ React hook to prepend your site `baseUrl` to a string.
 
 The `/baseUrl/` prefix is automatically added to all **absolute paths** by default:
 
-- Markdown: `[link](/my/path)` will link to `/baseUrl/my/path`
+- Markdown: `[link/my/path)` will link to `/baseUrl/my/path`
 - React: `<Link to="/my/path/">link</Link>` will link to `/baseUrl/my/path`
 
 :::
@@ -501,7 +501,7 @@ const SomeImage = () => {
 
 In most cases, you don't need `useBaseUrl`.
 
-Prefer a `require()` call for [assets](./guides/markdown-features/markdown-features-assets.mdx):
+Prefer a `require()` call for [assets./guides/markdown-features/markdown-features-assets.mdx):
 
 ```jsx
 <img src={require('@site/static/img/myImage.png').default} />
@@ -635,7 +635,7 @@ const MyComponent = () => {
 
 ### `interpolate` {#interpolate-1}
 
-The imperative counterpart of the [`<Interpolate>`](#interpolate) component.
+The imperative counterpart of the [`<Interpolate>`#interpolate) component.
 
 #### Signature {#signature}
 
@@ -661,7 +661,7 @@ const message = interpolate('Welcome {firstName}', {firstName: 'Sébastien'});
 
 ### `translate` {#translate-imperative}
 
-The imperative counterpart of the [`<Translate>`](#translate) component. Also supporting [placeholders interpolation](#interpolate).
+The imperative counterpart of the [`<Translate>`#translate) component. Also supporting [placeholders interpolation#interpolate).
 
 :::tip
 
@@ -725,7 +725,7 @@ A module that exposes a few boolean variables to check the current rendering env
 
 :::caution
 
-For React rendering logic, use [`useIsBrowser()`](#useIsBrowser) or [`<BrowserOnly>`](#browseronly) instead.
+For React rendering logic, use [`useIsBrowser()`#useIsBrowser) or [`<BrowserOnly>`#browseronly) instead.
 
 :::
 

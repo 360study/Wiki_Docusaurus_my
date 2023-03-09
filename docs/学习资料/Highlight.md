@@ -38,7 +38,7 @@ import TabItem from '@theme/TabItem';
 import styles from './markdown-features-tabs-styles.module.css';
 ```
 
-Docusaurus provides the `<Tabs>` component that you can use in Markdown thanks to [MDX](./markdown-features-react.mdx):
+Docusaurus provides the `<Tabs>` component that you can use in Markdown thanks to [MDX./markdown-features-react.mdx):
 
 <!-- prettier-ignore-start -->
 ```jsx
