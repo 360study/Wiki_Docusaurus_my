@@ -14,3 +14,16 @@ export default function Highlight({ children, color }) {
     </span>
   );
 }
+
+export function FontSizeAndColor({ children, size, color }) {
+  return (
+    <span
+      style={{
+        fontSize: size,
+        color: color,
+      }}
+    >
+      {children}
+    </span>
+  );
+}
