@@ -11,6 +11,11 @@
  *{
   font-size: medium;
  }
+ img{
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+ }
 :root {
   --ifm-color-primary: #be025d;
   --ifm-color-primary-dark: #29784c;
