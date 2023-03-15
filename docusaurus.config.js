@@ -239,7 +239,10 @@ const config = {
       ],
 
       // image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
-
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 5,
+      },
       docs: {
         sidebar: {
           hideable: true,
