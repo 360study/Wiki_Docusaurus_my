@@ -8,7 +8,9 @@
  */
 
 /* You can override the default Infima variables here. */
- 
+ *{
+  font-size: medium;
+ }
 :root {
   --ifm-color-primary: #be025d;
   --ifm-color-primary-dark: #29784c;

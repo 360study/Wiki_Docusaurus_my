@@ -168,6 +168,10 @@ const config = {
           breadcrumbs: false,
           remarkPlugins: [math],
           rehypePlugins: [katex],
+          admonitions: {
+            tag: ':::',
+            keywords: ['note', 'tip', 'info', 'caution', 'danger'],
+          },
         },
 
         sitemap: {
