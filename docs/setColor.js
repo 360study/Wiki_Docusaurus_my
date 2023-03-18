@@ -72,9 +72,9 @@ export const HQ = ({ children }) => SetColor(children, "#000", "#ee6666");
 
 export const HR = ({ children }) => SetColor(children, "#000", "#ffde34");
 
-export const FA = ({ children }) => setFontSize(children, "larger");
+export const FA = ({ children }) => setFontSize(children, "large");
 
-export const FB = ({ children }) => setFontSize(children, "x-large");
+export const FB = ({ children }) => setFontSize(children, "larger");
 
 export const FC = ({ children }) => setFontSize(children, "xx-large");
 
