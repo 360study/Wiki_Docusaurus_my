@@ -8,15 +8,40 @@
  */
 
 /* You can override the default Infima variables here. */
- *{
-  font-size: medium;
- }
- img{
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
- }
+
 :root {
+  --global-colors-charade: #282A36;
+  --global-colors-elephant: #0C3636;
+  --global-colors-cape: #4B5555;
+  --global-colors-nevada: #656F6F;
+  --global-colors-pewter: #999C9C;
+  --global-colors-mandy: #E84E4E;
+  --global-colors-picton: #44AEDE;
+  --global-colors-chamois: #F5DD64;
+  --global-colors-egg: #F7EFC7;
+  --global-colors-cararra: #F4F3F0;
+  --global-colors-sapling: #DADDE1;
+  --global-colors-white: #FFFFFF;
+  --global-shadow-elephant: rgba(0, 0, 0, 0.1);
+  --ifm-alert-background-color-my: #f5f6f5;
+  --global-font-size-gigantic: 132px;
+  --global-font-size-enormous: 100px;
+  --global-font-size-huge: 64px;
+  --global-font-size-big: 48px;
+  --global-font-size-larger: 32px;
+  --global-font-size-large: 24px;
+  --global-font-size-default: 18px;
+  --global-font-size-medium: 16px;
+  --global-font-size-small: 14px;
+
+  --global-mobile-nav-button-size: 40px;
+
+  --global-border-radius: 6px;
+
+  --global-header-height: 80px;
+  --global-sidebar-width: 300px;
+  --global-docs-top-spacing: 30px;
+  --global-container-spacing-default: 60px;
   --ifm-color-primary: #be025d;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -25,13 +50,22 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg:rgba(161, 161, 161, 0.127)/*修改了代码高亮条的背景颜色，更加的柔和*/
+  --docusaurus-highlighted-code-line-bg: rgba(161, 161, 161, 0.127)
+    /*修改了代码高亮条的背景颜色，更加的柔和*/
 
 }
- 
-img{
-  border:0px !important;
+
+img {
+  border: 0px !important;
 }
+
+
+img {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #02acbe;
@@ -41,7 +75,15 @@ img{
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg:rgba(161, 161, 161, 0.187)/*修改了代码高亮条的背景颜色，更加的柔和*/
+  --ifm-alert-background-color-my: #014710;
+  --global-colors-egg: #156c01;
+  --global-colors-elephant: #08cdcd;
+  --global-colors-cape: #e0eaea;
+  /*修改了代码高亮条的背景颜色，更加的柔和*/
+}
+
+.alert--secondary {
+  background-color: var(--ifm-alert-background-color-my);
 }
 
 .docusaurus-highlight-code-line {
@@ -82,12 +124,12 @@ aside.theme-doc-sidebar-container.docSidebarContainer_b6E3 {
 
 /* 隐藏 scrollbar */
 ::-webkit-scrollbar {
-  display: none;
+  display: block;
 }
 
 /* 文字选取颜色 */
 ::selection {
-  background: aquamarine;
+  background: rgb(178, 255, 127);
   color: black;
 }
 
@@ -118,25 +160,74 @@ img[alt=badge] {
   left: 0;
   top: 0;
 }
-body,p,blockquote {
-  font-size:  larger;
+
+body,
+p,
+blockquote {
+  font-size: var(--global-font-size-default);
   line-height: 30px;
 }
-h1,h2{
-  line-height: 60px;
-  height: 60px;
+
+
+
+blockquote {
+
+  background-color: var(--global-colors-egg);
+  border-color: var(--global-colors-mandy);
+  font-weight: 500;
+  color: var(--global-colors-cape);
+  padding: 10px;
+  border-radius: var(--global-border-radius);
+
+
 }
-h4{
-  font-size: larger;
+
+.pagination-nav {
+  border-top: 1px solid var(--global-colors-sapling);
+  margin-top: 60px;
+  padding-top: 30px;
 }
-h5,h6 {
-  font-size: large;
+
+.pagination-nav__link {
+  border: none;
+  text-transform: uppercase;
+  padding: 0;
+  color: var(--global-colors-elephant);
+
 }
-p{
-  font-size:medium;
+
+.pagination-nav__sublabel {
+  display: none;
 }
-table{
-  font-weight: normal;
-  font-size: medium;
-  font-style: normal;
+
+.pagination-nav__label::before,
+.pagination-nav__label::after {
+  color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pagination-nav__link:hover {
+  color: var(--global-colors-mandy);
+}
+
+
+.pagination-nav __sublabel {
+  display: none;
+}
+
+.pagination-nav __label {
+  font-weight: 600;
+}
+
+
+.margin-vert--lg {
+  margin: 0 !important;
+}
+
+code {
+  background-color: var(--global-colors-egg);
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: var(--global-border-radius);
 }

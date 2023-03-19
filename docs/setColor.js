@@ -6,7 +6,7 @@ export const Hb = ({ children }) => SetColor(children, "#fff", "#d70427");
 
 export const Hc = ({ children }) => SetColor(children, "#fff", "#ff1453");
 
-export const Hd = ({ children }) => SetColor(children, "#fff", "#77052F");
+export const Hd = ({ children }) => SetColor(children, "#fff", "#77ab56");
 
 export const He = ({ children }) => SetColor(children, "#fff", "#db1d1a");
 

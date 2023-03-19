@@ -12,7 +12,7 @@ const katex = require("rehype-katex");
 const config = {
   title: "质量管理体系学习资料",
   tagline: "^_^",
-  url: "https://wiki-power.com",
+  url: "https://360study.github.io/",
   baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
@@ -169,8 +169,8 @@ const config = {
           remarkPlugins: [math],
           rehypePlugins: [katex],
           admonitions: {
-            tag: ':::',
-            keywords: ['note', 'tip', 'info', 'caution', 'danger'],
+            tag: ":::",
+            keywords: ["note", "tip", "info", "caution", "danger"],
           },
         },
 
