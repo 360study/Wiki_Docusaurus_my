@@ -50,8 +50,9 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(161, 161, 161, 0.127)
-    /*修改了代码高亮条的背景颜色，更加的柔和*/
+  --docusaurus-highlighted-code-line-bg: rgba(161, 161, 161, 0.127);
+  --ifm-h5-font-size: 1.2rem;
+  /*修改了代码高亮条的背景颜色，更加的柔和*/
 
 }
 
@@ -163,6 +164,8 @@ img[alt=badge] {
 
 body,
 p,
+h4,
+h5,
 blockquote {
   font-size: var(--global-font-size-default);
   line-height: 30px;
@@ -230,4 +233,9 @@ code {
   font-weight: bold;
   padding: 0.3rem;
   border-radius: var(--global-border-radius);
+}
+
+pre code {
+  color: red !important;
+  word-wrap: anywhere;
 }
