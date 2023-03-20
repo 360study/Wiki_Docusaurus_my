@@ -175,7 +175,7 @@ blockquote {
 
 blockquote {
 
-  background-color: var(--global-colors-egg);
+  background-color: var(--global-colors-cararra);
   border-color: var(--global-colors-mandy);
   font-weight: 500;
   color: var(--global-colors-cape);
@@ -234,8 +234,22 @@ code {
   padding: 0.3rem;
   border-radius: var(--global-border-radius);
 }
+h5::before{content: "✈ ";}
+h4::before{content: "🍒  ";}
+h3::before{content: "✊ ";}
+h2::before{content: "🔖  ";}
 
 pre code {
   color: red !important;
   word-wrap: anywhere;
 }
+
+table tr:hover,h4:hover,h3:hover,h2:hover,li:hover,p:hover{
+  color: var(--global-colors-mandy);
+  /*  background-color: var(--global-colors-cararra); */
+  font-weight: bold;
+}
+/* 
+p::before{
+  content: "💃 "; 
+} */
