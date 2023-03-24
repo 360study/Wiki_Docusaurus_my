@@ -66,7 +66,7 @@ const config = {
         indexDocSidebarParentCategories: 0,
 
         // whether to index blog pages
-        indexBlog: true,
+        indexBlog: false,
 
         // whether to index static pages
         // /404.html is never indexed
@@ -85,7 +85,7 @@ const config = {
 
         // The maximum number of search results shown to the user. This does _not_ affect performance of
         // searches, but simply does not display additional search results that have been found.
-        maxSearchResults: 8,
+        maxSearchResults: 10000,
 
         // lunr.js-specific settings
         lunr: {
