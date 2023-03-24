@@ -95,6 +95,7 @@ function SetColor(children, color, bgcolor) {
         color: color,
         padding: "0.3rem",
       }}
+      class="my_alert"
     >
       {children}
     </span>
