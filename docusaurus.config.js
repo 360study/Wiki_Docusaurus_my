@@ -119,6 +119,7 @@ const config = {
         },
       },
     ],
+    ['docusaurus-plugin-sass',{}],
   ],
 
   // plugins: ["@lyrasearch/plugin-docusaurus"],
@@ -165,7 +166,7 @@ const config = {
           routeBasePath: "/",
           showLastUpdateTime: false,
           showLastUpdateAuthor: false,
-          breadcrumbs: false,
+          breadcrumbs: true,
           remarkPlugins: [math],
           rehypePlugins: [katex],
           admonitions: {
@@ -182,21 +183,18 @@ const config = {
         },
 
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
   ],
 
-  stylesheets: [
-    {
-      href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
-      type: "text/css",
-      integrity:
-        "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
-      crossorigin: "anonymous",
-    },
-  ],
+  stylesheets: [{
+    href: "https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css",
+    type: "text/css",
+    integrity: "sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM",
+    crossorigin: "anonymous",
+  }, ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -231,12 +229,10 @@ const config = {
 
       // sidebarCollapsible: true, //默认折叠
 
-      metadata: [
-        {
-          name: "keywords",
-          content: "QMS,EMS,质量管理,质量管理体系,CCAA,审核员",
-        },
-      ],
+      metadata: [{
+        name: "keywords",
+        content: "QMS,EMS,质量管理,质量管理体系,CCAA,审核员",
+      }, ],
 
       // image: 'https://cos.ap-guangzhou.myqcloud.com/wiki-media-1253965369/doc/logo-zip.png',
       tableOfContents: {
@@ -258,8 +254,7 @@ const config = {
       navbar: {
         title: "QMS学习网站",
         hideOnScroll: true,
-        items: [
-          {
+        items: [{
             to: "硬件与半导体",
             label: "硬件与半导体",
             position: "right",
@@ -273,8 +268,7 @@ const config = {
             type: "dropdown",
             label: "Community",
             position: "right",
-            items: [
-              {
+            items: [{
                 label: "Facebook",
                 href: "https://www.facebook.com",
               },
@@ -325,8 +319,7 @@ const config = {
       footer: {
         style: "light",
 
-        links: [
-          {
+        links: [{
             href: "https://nav.wiki-power.com/",
             label: "友链 & 导航站",
           },
