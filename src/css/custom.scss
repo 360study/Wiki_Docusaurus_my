@@ -388,3 +388,12 @@ html[data-theme="dark"] {
   white-space: pre-wrap; 
   overflow-wrap: anywhere;
 }
+
+.menu__link,.theme-doc-sidebar-menu,.menu__link--active {
+   @media screen and (max-width: 800px) {
+      color: #fff;
+    }
+}
+ .navbar__toggle,.clean-btn {
+  color: #fef0de;
+ }

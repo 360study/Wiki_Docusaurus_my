@@ -1,28 +1,26 @@
 import React from "react";
 
-
 /*说明：A开头的是设置Alert样式
 B开头的是设置setBadge样式
 C开头的是设置Button样式
 D开头的是设置DIV块shadow样式
 */
 
+export const Ha = ({ children }) => SetColor(children, "#fff", "#f8f739"); //#FA383E990066
 
-export const Ha = ({ children }) => SetColor(children, "#fff", "#990066");//#FA383E990066
+export const Hb = ({ children }) => SetColor(children, "#fff", "#ee3311");
 
-export const Hb = ({ children }) => SetColor(children, "#fff", "#540d6e");
+export const Hc = ({ children }) => SetColor(children, "#fff", "#11cc55");
 
-export const Hc = ({ children }) => SetColor(children, "#fff", "#d70427");
+export const Hd = ({ children }) => SetColor(children, "#fff", "#ff474c");
 
-export const Hd = ({ children }) => SetColor(children, "#fff", "#FA383E");
+export const He = ({ children }) => SetColor(children, "#fff", "#0000ff");
 
-export const He = ({ children }) => SetColor(children, "#fff", "#00A400");
-
-export const Hf = ({ children }) => SetColor(children, "#fff", "#26B226");
+export const Hf = ({ children }) => SetColor(children, "#fff", "#ee1166");
 
 export const Hg = ({ children }) => SetColor(children, "#fff", "#ff9f1a");
 
-export const Hh = ({ children }) => SetColor(children, "#fff", "#FFBA00");
+export const Hh = ({ children }) => SetColor(children, "#fff", "#0033bb");
 
 export const Hi = ({ children }) => SetColor(children, "#fff", "#306cce");
 
@@ -126,14 +124,16 @@ export const AE = ({ children }) => setAlertStyle(children, "warning");
 export const AF = ({ children }) => setAlertStyle(children, "danger");
 
 function setAlertStyle(children, type) {
-  return(
-    <div class={"alert alert--"+type} style={{ padding:"10px",margin:"10px 0"}} role="alert">
-    {children}
+  return (
+    <div
+      class={"alert alert--" + type}
+      style={{ padding: "10px", margin: "10px 0" }}
+      role="alert"
+    >
+      {children}
     </div>
-    );
- 
+  );
 }
-
 
 /*设置Badge样式 */
 export const BA = ({ children }) => setBadge(children, "primary");
@@ -143,37 +143,37 @@ export const BD = ({ children }) => setBadge(children, "info");
 export const BE = ({ children }) => setBadge(children, "warning");
 export const BF = ({ children }) => setBadge(children, "danger");
 function setBadge(children, type) {
-  return(
-    <span class={"badge badge--"+type}>
-    {children}
-    </span>
-    ); 
+  return <span class={"badge badge--" + type}>{children}</span>;
 }
 
 /*设置Button样式 */
-export const CA = ({ children }) => setButton(children, "primary","");
-export const CB = ({ children }) => setButton(children, "secondary","");
-export const CC = ({ children }) => setButton(children, "success","");
-export const CD = ({ children }) => setButton(children, "info","");
-export const CE = ({ children }) => setButton(children, "warning","");
-export const CF = ({ children }) => setButton(children, "danger","");
-
+export const CA = ({ children }) => setButton(children, "primary", "");
+export const CB = ({ children }) => setButton(children, "secondary", "");
+export const CC = ({ children }) => setButton(children, "success", "");
+export const CD = ({ children }) => setButton(children, "info", "");
+export const CE = ({ children }) => setButton(children, "warning", "");
+export const CF = ({ children }) => setButton(children, "danger", "");
 
 /*设置Button样式 带OUTLINE样式 */
-export const CA1 = ({ children }) => setButton(children, "primary","button--outline");
-export const CB2 = ({ children }) => setButton(children, "secondary","button--outline");
-export const CC3 = ({ children }) => setButton(children, "success","button--outline");
-export const CD4 = ({ children }) => setButton(children, "info","button--outline");
-export const CE5 = ({ children }) => setButton(children, "warning","button--outline");
-export const CF6 = ({ children }) => setButton(children, "danger","button--outline");
- 
+export const CA1 = ({ children }) =>
+  setButton(children, "primary", "button--outline");
+export const CB2 = ({ children }) =>
+  setButton(children, "secondary", "button--outline");
+export const CC3 = ({ children }) =>
+  setButton(children, "success", "button--outline");
+export const CD4 = ({ children }) =>
+  setButton(children, "info", "button--outline");
+export const CE5 = ({ children }) =>
+  setButton(children, "warning", "button--outline");
+export const CF6 = ({ children }) =>
+  setButton(children, "danger", "button--outline");
 
-function setButton(children, type,outline) {
-  return(
-    <button class={"button "+outline+"  button--"+type}>
-    {children}
+function setButton(children, type, outline) {
+  return (
+    <button class={"button " + outline + "  button--" + type}>
+      {children}
     </button>
-    ); 
+  );
 }
 
 /*设置文本块div */
@@ -183,10 +183,5 @@ export const DB = ({ children }) => setShadow(children, "md");
 export const DC = ({ children }) => setShadow(children, "tl");
 
 function setShadow(children, type) {
-  return(
-    <div class={"item shadow--"+type}>
-    {children}
-    </div>
-    ); 
-} 
-
+  return <div class={"item shadow--" + type}>{children}</div>;
+}
