@@ -6,7 +6,7 @@ C开头的是设置Button样式
 D开头的是设置DIV块shadow样式
 */
 
-export const Ha = ({ children }) => SetColor(children, "#fff", "#f8f739"); //#FA383E990066
+export const Ha = ({ children }) => SetColor(children, "#f00", "#f8f739"); //#FA383E990066
 
 export const Hb = ({ children }) => SetColor(children, "#fff", "#ee3311");
 
