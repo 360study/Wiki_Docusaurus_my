@@ -185,3 +185,10 @@ export const DC = ({ children }) => setShadow(children, "tl");
 function setShadow(children, type) {
   return <div class={"item shadow--" + type}>{children}</div>;
 }
+
+
+export const Center = ({ children }) => setCenter(children);
+
+function setCenter(children) {
+  return <div style={{ padding: "auto 0px", margin: "auto 0px",width:"100%",textAlign:"center" }}>{children}</div>;
+}
