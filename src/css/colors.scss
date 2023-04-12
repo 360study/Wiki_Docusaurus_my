@@ -255,7 +255,9 @@
   --ifm-color-blank-contrast-background:#ffffff;
   --ifm-breadcrumb-border-radius:0.5rem;
   --ifm-pagination-nav-border-radius:0.5rem;
-
+    --ifm-color-red-primary: #c10808;
+      --ifm-color-blue-primary: #0817c1;
+      --ifm-color-green-primary: #1ec108;
 }
 
 
@@ -289,7 +291,9 @@
   --docsearch-searchbox-focus-background: var(--color-gray-86) !important;
   --ifm-color-blank-contrast-background:#244e56;
     --global-colors-cararra: #3f3f3f;
-
+    --ifm-color-red-primary: #f17668;
+        --ifm-color-blue-primary: #3e4ef98a;
+        --ifm-color-green-primary: #76f765;
 }
 @function slideFontColor($px){
   
