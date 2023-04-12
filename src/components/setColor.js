@@ -186,9 +186,38 @@ function setShadow(children, type) {
   return <div class={"item shadow--" + type}>{children}</div>;
 }
 
-
 export const Center = ({ children }) => setCenter(children);
 
 function setCenter(children) {
-  return <div style={{ padding: "auto 0px", margin: "auto 0px",width:"100%",textAlign:"center" }}>{children}</div>;
+  return (
+    <div
+      style={{
+        padding: "auto 0px",
+        margin: "auto 0px",
+        width: "100%",
+        textAlign: "center",
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+export const colorRed = ({ children }) =>
+  setColor(children, "var(--ifm-color-red-primary)");
+export const colorBlue = ({ children }) =>
+  setColor(children, "var(--ifm-color-blue-primary)");
+export const colorGreen = ({ children }) =>
+  setColor(children, "var(--ifm-color-green-primary)");
+
+function setColor(children, color) {
+  return (
+    <font
+      style={{
+        color: color,
+      }}
+    >
+      {children}
+    </font>
+  );
 }
