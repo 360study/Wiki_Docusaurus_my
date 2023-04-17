@@ -221,3 +221,16 @@ function setColor(children, color) {
     </font>
   );
 }
+
+
+export const setCardWhite = ({ children }) =>
+_setCard(children, "white");
+function _setCard(children, color) {
+  return (
+    <div
+      class={"my_card_"+color}
+    >
+      {children}
+    </div>
+  );
+}
