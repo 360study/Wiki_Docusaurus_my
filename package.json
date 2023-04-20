@@ -21,6 +21,7 @@
     "@docusaurus/theme-mermaid": "^2.4.0",
     "@easyops-cn/docusaurus-search-local": "^0.23.3",
     "@lyrasearch/plugin-docusaurus": "^0.1.0",
+    "@mdx-js/mdx": "^2.3.0",
     "@node-rs/jieba": "^1.6.1",
     "clsx": "^1.1.1",
     "docusaurus-lunr-search": "^2.3.2",
