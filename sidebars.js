@@ -3,7 +3,7 @@ module.exports = {
     "Home",
     {
       type: "category",
-      label: "Sidebar",
+      label: "学习资料",
       link: {
         type: "doc",
         id: "xuexi_index",

@@ -29,6 +29,7 @@ import {
   colorRed as x,
   colorBlue as y,
   colorGreen as z,
+  setCardWhite as Y,
 } from "@site/src/components/setColor.js";
 
 export default {
@@ -62,4 +63,5 @@ export default {
   x,
   y,
   x,
+  Y,
 };
