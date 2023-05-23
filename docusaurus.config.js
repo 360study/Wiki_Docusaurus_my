@@ -247,7 +247,7 @@ const config = {
       docs: {
         sidebar: {
           hideable: true,
-          autoCollapseCategories: true,
+          autoCollapseCategories: false,
         },
       },
       //图表设置，最多字数限制
