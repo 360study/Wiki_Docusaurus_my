@@ -78,6 +78,7 @@ export const HQ = ({ children }) => SetColor(children, "#000", "#ee6666");
 
 export const HR = ({ children }) => SetColor(children, "#000", "#ffde34");
 
+
 export const FA = ({ children }) => setFontSize(children, "large");
 
 export const FB = ({ children }) => setFontSize(children, "larger");
@@ -209,6 +210,7 @@ export const colorBlue = ({ children }) =>
   setColor(children, "var(--ifm-color-blue-primary)");
 export const colorGreen = ({ children }) =>
   setColor(children, "var(--ifm-color-green-primary)");
+  export const HS = ({ children }) => setColor(children, "#B2AFAF");
 
 function setColor(children, color) {
   return (

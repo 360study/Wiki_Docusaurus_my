@@ -25,6 +25,7 @@ import {
   CD as U,
   CE as V,
   CF as W,
+  HS as w,
   Center as X,
   colorRed as x,
   colorBlue as y,
@@ -64,4 +65,5 @@ export default {
   y,
   x,
   Y,
+  w,
 };
