@@ -42,7 +42,18 @@
   display: flex;
   margin-bottom:1rem;
 }
-
+.markdown  h2 {
+  padding-bottom: .3em;
+  font-size: 1.3em;
+  line-height: 1.225;
+  border-bottom: 1px dashed  rgb(253, 220, 209);
+}
+ .markdown  h3 {
+  padding-bottom: .3em;
+  font-size: 1.3em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
 .alert--secondary {
   background-color: var(--ifm-alert-background-color-my);
 }
