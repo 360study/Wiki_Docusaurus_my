@@ -40,16 +40,16 @@
   margin: 0 auto;
   text-align: center;
   display: flex;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
 }
-.markdown  h2 {
-  padding-bottom: .3em;
+.markdown h2 {
+  padding-bottom: 0.3em;
   font-size: 1.3em;
   line-height: 1.225;
-  border-bottom: 1px dashed  rgb(253, 220, 209);
+  border-bottom: 1px dashed rgb(253, 220, 209);
 }
- .markdown  h3 {
-  padding-bottom: .3em;
+.markdown h3 {
+  padding-bottom: 0.3em;
   font-size: 1.3em;
   line-height: 1.225;
   border-bottom: 1px solid #eee;
@@ -130,7 +130,7 @@ html {
 }
 
 .content-ref-card::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -151,7 +151,6 @@ html {
   max-width: 48px;
   margin-right: 16px;
 }
-
 
 img[alt="badge"] {
   border: none;
@@ -177,7 +176,7 @@ p,
 h4,
 h5,
 blockquote {
-  font-family: '宋体', Georgia, serif,'黑体';
+  font-family: "宋体", Georgia, serif, "黑体";
   font-size: var(--global-font-size-default);
   line-height: 30px;
 }
@@ -193,10 +192,11 @@ blockquote {
 
 /*sidebar左侧边导航条*/
 .theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-1.menu__list-item {
-  margin-left: 1rem;
+  /*margin-left: 1rem;*/
 }
 
-.section-title.theme-doc-sidebar-item-category-level-1 .menu__list-item-collapsible {
+.section-title.theme-doc-sidebar-item-category-level-1
+  .menu__list-item-collapsible {
   text-transform: uppercase;
   font-size: 0.75rem;
   margin: 24px auto 8px 1rem;
@@ -215,33 +215,48 @@ blockquote {
 .section-title .menu__list-item-collapsible:hover {
   background: none;
 }
+.theme-doc-sidebar-container .menu{
+  background-color: var(--ifm-back-color-menu) !important;
 
-.menu__link:hover {
-  color: var(--ifm-font-color-base) !important;
 }
-
-.theme-doc-sidebar-menu .menu__link .menu__link--active, .theme-doc-sidebar-menu .menu__link.menu__link--active {
- color: var(--ifm-heading-color) !important;
+.theme-doc-sidebar-menu .menu__link .menu__link--active  {
+  color: var(--ifm-heading-color) !important;
   font-weight: 700;
   border-left: 0.125rem solid var(--color-gray-16) !important;
 }
-
+.menu__link .menu__link--active {
+  color: var(--ifm-font-color-menu) !important;
+}
+.menu__link {
+  color: var(--ifm-font-color-menu) !important;
+}
+.menu__link:hover {
+  color: var(--ifm-hover-color-base) !important;
+}
 .menu__list-item {
   font-size: 0.875rem;
   margin: 0px auto 0px 0;
 }
+.navbar__toggle, .clean-btn{
+  color: var(--ifm-toggle-color-base) !important;
+}
+.docPage_node_modules-\@docusaurus-theme-classic-lib-theme-DocPage-Layout-styles-module {
+  background-color: var(--ifm-bg-color-base) !important;
 
+}
 .theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-3 a {
   color: var(--ifm-font-color-secondary);
 }
 
-.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2 ul.menu__list {
+.theme-doc-sidebar-item-category.theme-doc-sidebar-item-category-level-2
+  ul.menu__list {
   border-left: 1px solid #ccc;
   padding-left: 0px;
   margin-left: 16px;
 }
 
-.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-3.menu__list-item a.menu__link {
+.theme-doc-sidebar-item-link.theme-doc-sidebar-item-link-level-3.menu__list-item
+  a.menu__link {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -289,46 +304,41 @@ blockquote {
 // .pagination-nav __label {
 //   font-weight: 600;
 // }
-.alert--blank{
-     --ifm-alert-background-color: var(
-      --ifm-color-blank-contrast-background
-      );
-    --ifm-alert-background-color-highlight: rgba(0, 164, 0, 0.15);
-    --ifm-alert-foreground-color: var(
-        --ifm-color-success-contrast-foreground
-      );
-    --ifm-alert-border-color: var(--ifm-color-success-dark); 
-    border:0px;
-    padding:10px;
-    margin: 10px 0px;
+.alert--blank {
+  --ifm-alert-background-color: var(--ifm-color-blank-contrast-background);
+  --ifm-alert-background-color-highlight: rgba(0, 164, 0, 0.15);
+  --ifm-alert-foreground-color: var(--ifm-color-success-contrast-foreground);
+  --ifm-alert-border-color: var(--ifm-color-success-dark);
+  border: 0px;
+  padding: 10px;
+  margin: 10px 0px;
 }
 .margin-vert--lg {
   margin: 0 !important;
 }
 
-.item{
+.item {
   padding: var(--ifm-pre-padding);
   border-radius: var(--global-border-radius);
 }
-.button{
-  margin-top:-2px;
-  padding: 0px 2px 0px 2px;//上右下左
+.button {
+  margin-top: -2px;
+  padding: 0px 2px 0px 2px; //上右下左
   border-radius: var(--global-border-radius);
-  font-size:var(--global-font-size-default)
+  font-size: var(--global-font-size-default);
 }
-.alert{
+.alert {
   padding: 0.6rem;
 }
 .theme-code-block {
-//  padding:0.2rem 0.6rem 0.2rem  0.6rem;
+  //  padding:0.2rem 0.6rem 0.2rem  0.6rem;
   border-radius: var(--global-border-radius);
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   overflow-wrap: anywhere;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
-
- }
- .my_alert:hover,.theme-code-block:hover {
- 
+}
+.my_alert:hover,
+.theme-code-block:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 // h5::before {
@@ -347,7 +357,6 @@ blockquote {
 pre code {
   color: red !important;
   word-wrap: anywhere;
- 
 }
 
 table tr:hover,
@@ -365,12 +374,10 @@ p:hover {
   border-bottom: 1px dashed #01a435;
   font-size: var(--global-font-size-default);
 }
- 
+
 /* Dark Mode Styles */
 
 html[data-theme="dark"] {
- 
-
   .theme-edit-this-page {
     &::before,
     &::after {
@@ -392,29 +399,31 @@ html[data-theme="dark"] {
   }
 }
 
-
 .token-line {
   font-weight: 500;
   font-family: var(--global-block-family-code);
-  height:30px;
+  height: 30px;
   line-height: 30px;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 
-.menu__link,.theme-doc-sidebar-menu,.menu__link--active {
-   @media screen and (max-width: 800px) {
-      color: #fff;
-    }
+.menu__link,
+.theme-doc-sidebar-menu,
+.menu__link--active {
+  @media screen and (max-width: 800px) {
+    color: #fff;
+  }
 }
- .navbar__toggle,.clean-btn {
+.navbar__toggle,
+.clean-btn {
   color: #fef0de;
- }
-.document-formatting blockquote{
-         border-left: 2px solid #E04E4B;
-         color: #666;
-         margin: 1.5em 0;
-         padding: .75em 20px .75em 30px;
+}
+.document-formatting blockquote {
+  border-left: 2px solid #e04e4b;
+  color: #666;
+  margin: 1.5em 0;
+  padding: 0.75em 20px 0.75em 30px;
 }
 
 .my_card_white {

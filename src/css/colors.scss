@@ -1,7 +1,6 @@
-
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('/fonts/IBM-Plex-Sans-300.woff2') format('woff2');
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBM-Plex-Sans-300.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: 300;
@@ -9,18 +8,17 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('/fonts/IBM-Plex-Sans-400.woff2') format('woff2');
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBM-Plex-Sans-400.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: 400;
   font-display: swap;
 }
 
-
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('/fonts/IBM-Plex-Sans-500.woff2') format('woff2');
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBM-Plex-Sans-500.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: 500;
@@ -28,8 +26,8 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('/fonts/IBM-Plex-Sans-600.woff2') format('woff2');
+  font-family: "IBM Plex Sans";
+  src: url("/fonts/IBM-Plex-Sans-600.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: 600;
@@ -37,8 +35,8 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBM-Plex-Mono-300.woff2') format('woff2');
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBM-Plex-Mono-300.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: 300;
@@ -46,8 +44,8 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBM-Plex-Mono-600.woff2') format('woff2');
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBM-Plex-Mono-600.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: 600;
@@ -55,8 +53,8 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('/fonts/IBM-Plex-Mono-normal.woff2') format('woff2');
+  font-family: "IBM Plex Mono";
+  src: url("/fonts/IBM-Plex-Mono-normal.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: normal;
@@ -64,8 +62,8 @@
 }
 
 @font-face {
-  font-family: 'IBM Plex Mono Regular';
-  src: url('/fonts/IBM-Plex-Mono-Regular.woff2') format('woff2');
+  font-family: "IBM Plex Mono Regular";
+  src: url("/fonts/IBM-Plex-Mono-Regular.woff2") format("woff2");
 
   /* Super Modern Browsers */
   font-weight: normal;
@@ -73,36 +71,36 @@
 }
 
 :root {
-    /* Custom Variables */
-    --color-gray-0: #ffffff;
-    --color-gray-4: #f3f5f7;
-    --color-gray-4-alpha-04: rgba(243, 245, 247, 0.4);
-    --color-gray-8: #e7ebef;
-    --color-gray-12: #dce2e8;
-    --color-gray-16: #cfd8df;
-    //new
-    --color-gray-20: #c2d0d8;
-    --color-gray-24: #b6c6ce;
-    --color-gray-28: #a9bcc4;
-    --color-gray-32: #9db2ba;
-    --color-gray-36: #91a8b0;
-    --color-gray-40: #849ea6;
-    --color-gray-44: #78949c;
-    --color-gray-48: #6c8a92;
-    --color-gray-52: #608088;
-    --color-gray-56: #54767e;
-    --color-gray-60: #486c74;
-    --color-gray-64: #3c626a;
-    --color-gray-68: #305860;
-    --color-gray-72: #244e56;
-    //end new
-    --color-gray-74: #344658;
-    --color-gray-78: #2c3b4b;
-    --color-gray-82: #23303d;
-    --color-gray-86: #1c262f;
-    --color-gray-86-alpha-04: rgba(28, 38, 47, 0.4);
-    --color-gray-90: #141c22;
-      /* Docusaurus Specific variables */
+  /* Custom Variables */
+  --color-gray-0: #ffffff;
+  --color-gray-4: #f3f5f7;
+  --color-gray-4-alpha-04: rgba(243, 245, 247, 0.4);
+  --color-gray-8: #e7ebef;
+  --color-gray-12: #dce2e8;
+  --color-gray-16: #cfd8df;
+  //new
+  --color-gray-20: #c2d0d8;
+  --color-gray-24: #b6c6ce;
+  --color-gray-28: #a9bcc4;
+  --color-gray-32: #9db2ba;
+  --color-gray-36: #91a8b0;
+  --color-gray-40: #849ea6;
+  --color-gray-44: #78949c;
+  --color-gray-48: #6c8a92;
+  --color-gray-52: #608088;
+  --color-gray-56: #54767e;
+  --color-gray-60: #486c74;
+  --color-gray-64: #3c626a;
+  --color-gray-68: #305860;
+  --color-gray-72: #244e56;
+  //end new
+  --color-gray-74: #344658;
+  --color-gray-78: #2c3b4b;
+  --color-gray-82: #23303d;
+  --color-gray-86: #1c262f;
+  --color-gray-86-alpha-04: rgba(28, 38, 47, 0.4);
+  --color-gray-90: #141c22;
+  /* Docusaurus Specific variables */
   --ifm-color-primary: #0b89d0;
   --ifm-color-primary-dark: #0079bd;
   --ifm-color-primary-darker: #005c8f;
@@ -157,7 +155,14 @@
   --ifm-color-danger-lightest: #fc9f9f;
   --ifm-color-danger-contrast-background: #ffe8e8;
   --ifm-color-danger-contrast-foreground: #6a0808;
-/* --ifm-navbar-background-color; */
+
+
+  --ifm-font-color-menu: #ffefd8;
+  --ifm-back-color-menu: #1c262f;
+  --ifm-hover-color-base: #f5dd64;
+
+
+  /* --ifm-navbar-background-color; */
   /* --ifm-background-color */
   --ifm-heading-color: var(--color-gray-74);
   --ifm-footer-background-color: var(--color-gray-8);
@@ -176,21 +181,21 @@
   --ifm-global-shadow-lw: 0px 2px 6px rgba(0, 0, 0, 0.2);
   --ifm-global-shadow-md: 0px 4px 14px rgba(0, 0, 0, 0.16);
   --ifm-global-shadow-tl: 0px 10px 30px rgba(0, 0, 0, 0.16);
-  --ifm-container-width-xl:100%;
+  --ifm-container-width-xl: 100%;
   --ifm-global-radius: 0.9rem;
   --ifm-color-gray-100: var(--color-gray-12);
-  --global-colors-charade: #282A36;
-  --global-colors-elephant: #0C3636;
-  --global-colors-cape: #4B5555;
-  --global-colors-nevada: #656F6F;
-  --global-colors-pewter: #999C9C;
-  --global-colors-mandy: #E84E4E;
-  --global-colors-picton: #44AEDE;
-  --global-colors-chamois: #F5DD64;
-  --global-colors-egg: #F7EFC7;
-  --global-colors-cararra: #F4F3F0;
-  --global-colors-sapling: #DADDE1;
-  --global-colors-white: #FFFFFF;
+  --global-colors-charade: #282a36;
+  --global-colors-elephant: #0c3636;
+  --global-colors-cape: #4b5555;
+  --global-colors-nevada: #656f6f;
+  --global-colors-pewter: #999c9c;
+  --global-colors-mandy: #e84e4e;
+  --global-colors-picton: #44aede;
+  --global-colors-chamois: #f5dd64;
+  --global-colors-egg: #f7efc7;
+  --global-colors-cararra: #f4f3f0;
+  --global-colors-sapling: #dadde1;
+  --global-colors-white: #ffffff;
   --global-shadow-elephant: rgba(0, 0, 0, 0.1);
   --ifm-alert-background-color-my: #f5f6f5;
   --global-font-size-gigantic: 132px;
@@ -233,12 +238,14 @@
   --ifm-code-font-size: 95%;
   --ifm-navbar-background-color: #0e1f3b;
   --ifm-footer-background-color: #142d57;
-  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
-    BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --ifm-heading-font-family: greycliff-cf, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
-    sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  --ifm-font-family-base: "Inter", system-ui, -apple-system, Segoe UI, Roboto,
+    Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  --ifm-heading-font-family: greycliff-cf, system-ui, -apple-system, Segoe UI,
+    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont,
+    "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   --doc-sidebar-width: 350px;
   letter-spacing: -0.02rem;
   --ifm-h1-font-size: 1.875rem;
@@ -246,23 +253,25 @@
   --ifm-font-size-base: 100%;
   --ifm-menu-link-padding-horizontal: 1rem;
   --ifm-menu-link-padding-vertical: 0.5rem;
-  --ifm-heading-color: #1753AE;
+  --ifm-heading-color: #1753ae;
 
-  --ifm-global-spacing:2rem;
+  --ifm-global-spacing: 2rem;
 
-  --ifm-alert-border-radius:0.2rem;
-  --ifm-pre-padding:0.8rem;
-  --ifm-color-blank-contrast-background:#ffffff;
-  --ifm-breadcrumb-border-radius:0.5rem;
-  --ifm-pagination-nav-border-radius:0.5rem;
-    --ifm-color-red-primary: #c10808;
-      --ifm-color-blue-primary: #0817c1;
-      --ifm-color-green-primary: #1ec108;
+  --ifm-alert-border-radius: 0.2rem;
+  --ifm-pre-padding: 0.8rem;
+  --ifm-color-blank-contrast-background: #ffffff;
+  --ifm-breadcrumb-border-radius: 0.5rem;
+  --ifm-pagination-nav-border-radius: 0.5rem;
+  --ifm-color-red-primary: #c10808;
+  --ifm-color-blue-primary: #0817c1;
+  --ifm-color-green-primary: #1ec108;
+
+  --ifm-toggle-color-base:#f36e3e;
+  
 }
 
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #02acbe;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -275,7 +284,7 @@
   --global-colors-elephant: #08cdcd;
   --global-colors-cape: #e0eaea;
   /*修改了代码高亮条的背景颜色，更加的柔和*/
-  --ifm-link-color: #48ADF6;
+  --ifm-link-color: #48adf6;
   --ifm-heading-color: var(--color-gray-12);
   --ifm-navbar-background-color: var(--color-gray-82);
   --ifm-background-color: var(--color-gray-90);
@@ -289,12 +298,15 @@
   --collapse-button-bg-color-dark: var(--color-gray-86);
   --docsearch-searchbox-background: var(--color-gray-90) !important;
   --docsearch-searchbox-focus-background: var(--color-gray-86) !important;
-  --ifm-color-blank-contrast-background:#244e56;
-    --global-colors-cararra: #3f3f3f;
-    --ifm-color-red-primary: #f17668;
-        --ifm-color-blue-primary: #3e4ef98a;
-        --ifm-color-green-primary: #76f765;
+  --ifm-color-blank-contrast-background: #244e56;
+  --global-colors-cararra: #3f3f3f;
+  --ifm-color-red-primary: #f17668;
+  --ifm-color-blue-primary: #3e4ef98a;
+  --ifm-color-green-primary: #76f765;
+
+  --ifm-back-color-menu: #24303D;  
+  --ifm-toggle-color-base:#fff;
+  --ifm-bg-color-base:#001527;
 }
-@function slideFontColor($px){
-  
+@function slideFontColor($px) {
 }
